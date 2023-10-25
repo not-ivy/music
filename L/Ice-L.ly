@@ -10,6 +10,7 @@ global = {
   \key bes \minor
   \numericTimeSignature
   \time 4/4
+  \tempo 4=152
 }
 
 right = \relative c'' {
@@ -34,7 +35,53 @@ right = \relative c'' {
   \tuplet 3/2 { c a a' f c a }                |
   \tuplet 3/2 { des' bes ges f ges c, }
   des bes ges f b c des f ges f e f           |
-  
+  bes, bes, f' c' des, f des' f,
+  f' e f ges f ees des f,                     |
+  c' ges f a c bes a c f e f ges
+  \tuplet 3/2 { f c a a ges f }               |
+  c a c f des c f gis aes c b c a f' e es     |
+  d f, bes f bes d, f bes,
+  \tuplet 3/2 { d ees e f aes bes }
+  d es f bes,                                 |
+  \tuplet 3/2 { bes' aes ges f ees d }
+  \tuplet 3/2 { des c bes f aes ges }
+  \tuplet 3/2 { f d bes ces aes f }
+  d cis d bes                                 |
+  a' bes f aes ges ees d ees
+  \tuplet 3/2 { ees bes d ees f ges }
+  \tuplet 3/2 { aes a bes d ees bes }         |
+  \tuplet 3/2 { ees f ges aes bes f }
+  \tuplet 3/2 { aes ges bes ees d bes }
+  \tuplet 3/2 { ees f ges ees aes f }
+  bes ges f ees                               |
+  c ees \tuplet 3/2 { ges f ees }
+  \tuplet 3/2 { f ges ees ces ees a, }
+  \tuplet 3/2 { ges f ees ges ces des }
+  ees, ees des c                              |
+  c' a c aes' ges aes bes ges
+  \tuplet 3/2 { c, aes f } ees c
+  aes' f c' f                                 |
+  des des, \tuplet 3/2 { f bes c }
+  des bes des f
+  c c, \tuplet 3/2 { f aes bes }
+  c b c f                                     |
+  \tuplet 3/2 { bes, ges des bes ges des }
+  \tuplet 3/2 { des' c b c des f }
+  ges bes c des f ges ees d                   |
+  e bes ges ees
+  \tuplet 3/2 { bes ees f ges bes c }
+  ges bes d e e bes e bes                     |
+  \tuplet 3/2 { f' c a f c a' }
+  \tuplet 3/2 { c b c f e f }
+  \tuplet 3/2 { c' a f a f c }
+  \tuplet 3/2 { f c a c f a }                 |
+  \tuplet 3/2 { bes ges f des c des }
+  \tuplet 3/2 { bes a bes ges f ges }
+  \tuplet 3/2 { f ges f e ees f }
+  \tuplet 3/2 { bes c bes bes f' des }        |
+  bes ges f ees des c bes a
+  \tuplet 3/2 { des8 f16 des8 f16 }
+  \tuplet 3/2 { des'8 f16 des bes' f }
 }
 
 left = \relative c' {
@@ -50,7 +97,18 @@ left = \relative c' {
   <ees ees'>                                  |
   <e e'>                                      |
   <f f'>~ <f f'>                              |
-  <bes bes'>~ <bes bes'>                      |
+  <bes' des f bes>~ <bes des f bes>           |
+  <c f a>~ <c f a>                            |
+  <d f aes>                                   |
+  <d f bes>                                   |
+  <ges, bes ees>~ <ges bes ees>               |
+  <f' a c>                                    |
+  <a, c f>                                    |
+  <bes f' bes>2 <aes f' aes>                  |
+  <ges des' ges>1                             |
+  <f a c>                                     |
+  <a c f>                                     |
+  <bes des f bes>~ <bes des f bes>            |
 }
 
 violin = \relative c'' {
@@ -74,7 +132,7 @@ viola = \relative c' {
   ees~ ees                                    |
   c2 ees c1                                   |
   des2 c bes bes                              |
-  c ees g bes
+  c c g' g f (f f f)                          |
 }
 
 pianoPart = \new PianoStaff \with {
